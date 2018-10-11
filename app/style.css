@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.username-ctr{
+    background-color: #339e72;
+}
+
+.username, .disconnect{
+    margin: 0;
+    display: inline-block;
+    padding: 15px;
+    font-weight: 400;
+    color: white;
+    font-size: 1.8em;
+}
+
+.disconnect{
+    font-size: 1.2em;
+    font-weight: 200;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    padding: 0;
+    padding-right: 10px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+form{
+    margin: 20px 10px 0px;
+}
+
+form label{
+    font-size: 1.5em;
+    display: block;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+form .username-txt, .text-msg{
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 3px;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px 5px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+form .username-txt:focus, .text-msg{
+    outline: none;
+}
+
+form input[type="submit"], .send{
+    background-color: #339e72;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: white;
+}
+
+.chat-comp{
+    height: calc(100vh - 90px);
+    display: grid;
+    margin: 0 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+.messages{
+    grid-column: 1/3;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    border-left: 1px solid rgb(221, 221, 221);
+    border-right: 1px solid rgb(221, 221, 221);
+    margin-bottom: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-row-gap: 10px;
+    align-items: end;
+    overflow-y: auto;
+}
+
+.text-area{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 10px;
+}
+
+.send{
+    font-size: 1em;
+    grid-column: 2/3;
+}
+
+.text-msg{
+    margin-bottom: 0px;
+}
+
+.current-user, .other-users{
+    max-width: 60%;
+    word-wrap: break-word;
+    padding: 5px 10px;
+}
+
+.current-user{
+    background-color: #f0efe4;
+    justify-self: end;
+}
+
+.other-users{
+    justify-self: start;
+    background-color: #e0eee8;
+}
+
+.other-users .username{
+    display: block;
+    padding: 0px;
+    font-weight: 400;
+    font-size: .9em;
+    color: black;
+}
+
+.message{
+    font-size: 1.1em;
+}
+
+.error-ctr{
+    margin-top: 10px;
+}
+
+.error-msg{
+    background-color: #d83937;
+    color: white;
+}
+
+.display-mode{
+    padding: 10px;
+    display: inline-block;
+}
